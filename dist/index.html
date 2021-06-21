@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DOZ - COMPONENT">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>DOZ - COMPONENT</title>
+    <script src="https://unpkg.com/doz/dist/doz.js"></script>
+    <script src="bundle.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script>
+
+    new Doz({
+        root: '#app',
+        template(h) {
+            return h`
+                <div class="app-container">
+                    <doz-cookie-notice
+                        moreInfoText="Leggi di più"
+                        moreInfoLink="#"
+                        message="Utilizziamo i cookie per essere sicuri che tu possa avere la migliore esperienza sul nostro sito. Se continui ad utilizzare questo sito noi assumiamo che tu ne sia felice."
+                    />
+                    <button onclick="${() => {localStorage.removeItem('doz-cookie-notice-agreement'); location.reload()}}">Remove agreement</button>
+                </div>
+            `
+        }
+    });
+
+</script>
+</body>
+</html>
