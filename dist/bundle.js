@@ -1,4 +1,4 @@
-// [DozCookieNotice]  Build version: 1.0.4  
+// [DozCookieNotice]  Build version: 1.0.5  
  (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("doz"));
@@ -193,7 +193,6 @@ var CookieNoticeAgreement = (_dec = Object(external_commonjs_doz_commonjs2_doz_a
 
 function register() {
   if (typeof window !== 'undefined') {
-    console.log(CookieNoticeAgreement.tag);
     Object(external_commonjs_doz_commonjs2_doz_amd_doz_root_Doz_["define"])(CookieNoticeAgreement.tag || 'doz-cookie-notice', CookieNoticeAgreement); // Keep in mind to add a prefix like this: 'dwc-' to the name of the component you are going to define, 
     // this to prevent Doz from processing possible Web Components that have the same name as the Doz Components.
 
