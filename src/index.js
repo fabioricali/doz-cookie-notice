@@ -1,5 +1,6 @@
-import {Component} from "doz";
+import {Component, tag} from "doz";
 
+@tag('doz-cookie-notice')
 export default class CookieNoticeAgreement extends Component{
 
     constructor(o) {
