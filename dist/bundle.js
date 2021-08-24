@@ -1,4 +1,4 @@
-// [DozCookieNotice]  Build version: 1.0.0  
+// [DozCookieNotice]  Build version: 1.0.1  
  (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("doz"));
@@ -203,7 +203,7 @@ function register() {
 }
 
 register();
-/* harmony default export */ var index = __webpack_exports__["default"] = (_default);
+/* harmony default export */ var index = __webpack_exports__["default"] = (undefined__WEBPACK_MODULE_REFERENCE__1_64656661756c74__);
 
 if (false) {}
 

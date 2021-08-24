@@ -1,6 +1,6 @@
 {
     "name": "doz-cookie-notice",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Cookie notice component",
     "main": "dist/bundle.js",
     "scripts": {
