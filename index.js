@@ -4,7 +4,6 @@ import cmp from './src'
 // expose component to global scope
 function register() {
     if (typeof window !== 'undefined') {
-        console.log(cmp.tag)
         define(cmp.tag || 'doz-cookie-notice', cmp);
         // Keep in mind to add a prefix like this: 'dwc-' to the name of the component you are going to define, 
         // this to prevent Doz from processing possible Web Components that have the same name as the Doz Components.
