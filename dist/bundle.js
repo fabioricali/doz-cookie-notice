@@ -103,111 +103,109 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__0__;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
+// EXTERNAL MODULE: external {"commonjs":"doz","commonjs2":"doz","amd":"doz","root":"Doz"}
+var external_commonjs_doz_commonjs2_doz_amd_doz_root_Doz_ = __webpack_require__(0);
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
+// CONCATENATED MODULE: ./src/index.js
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-var _doz = __webpack_require__(0);
+var _templateObject;
 
-var _src = __webpack_require__(2);
-
-var _src2 = _interopRequireDefault(_src);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// expose component to global scope
-function register() {
-    if (typeof window !== 'undefined') {
-        (0, _doz.define)('doz-cookie-notice', _src2.default);
-        // Keep in mind to add a prefix like this: 'dwc-' to the name of the component you are going to define, 
-        // this to prevent Doz from processing possible Web Components that have the same name as the Doz Components.
-        (0, _doz.defineWebComponent)('dwc-doz-cookie-notice', _src2.default, ['storage-key', 'position', 'message', 'more-info-text', 'more-info-link', 'privacy-link', 'ok-button-text', 'theme']);
-    }
-}
-
-register();
-
-exports.default = _src2.default;
-
-
-if (false) {}
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _templateObject = _taggedTemplateLiteral(['\n            <style> \n                :component {\n                    display: ', ';\n                    position: fixed;\n                    ', ';\n                    left: 0;\n                    width: 100%;\n                    z-index: 99999;\n                    font-family: Arial, \'sans-serif\';\n                }\n                \n                * {\n                    box-sizing: border-box;\n                }\n                \n                .cookie-notice-container {\n                    ', '\n                    padding: 24px;\n                    font-size: 14px;\n                }\n                \n                .message-container {\n                    margin-bottom: 16px;\n                }\n                \n                .button {\n                    padding: 8px;\n                    border: none;\n                    display: inline-block;\n                    border-radius: 4px;\n                    text-transform: uppercase;\n                }\n                \n                .ok-button {\n                    border: none;\n                    background: cornflowerblue;\n                    color: #fff;\n                    cursor: pointer;\n                }\n                \n                a {\n                    ', '\n                }\n            </style>\n            <div class="cookie-notice-container" data-nosnippet="true">\n                <div class="message-container">\n                    <span class="message-text">', '</span>\n                    <span d-show="', '" class="more-info-text">&nbsp;\n                        <a href="', '" target="_blank">', '</a>\n                    </span>\n                </div>\n                <div class="buttons-container">\n                    <button class="ok-button button" onclick="', '">\n                        ', '\n                    </button>\n                </div>\n            </div>\n        '], ['\n            <style> \n                :component {\n                    display: ', ';\n                    position: fixed;\n                    ', ';\n                    left: 0;\n                    width: 100%;\n                    z-index: 99999;\n                    font-family: Arial, \'sans-serif\';\n                }\n                \n                * {\n                    box-sizing: border-box;\n                }\n                \n                .cookie-notice-container {\n                    ', '\n                    padding: 24px;\n                    font-size: 14px;\n                }\n                \n                .message-container {\n                    margin-bottom: 16px;\n                }\n                \n                .button {\n                    padding: 8px;\n                    border: none;\n                    display: inline-block;\n                    border-radius: 4px;\n                    text-transform: uppercase;\n                }\n                \n                .ok-button {\n                    border: none;\n                    background: cornflowerblue;\n                    color: #fff;\n                    cursor: pointer;\n                }\n                \n                a {\n                    ', '\n                }\n            </style>\n            <div class="cookie-notice-container" data-nosnippet="true">\n                <div class="message-container">\n                    <span class="message-text">', '</span>\n                    <span d-show="', '" class="more-info-text">&nbsp;\n                        <a href="', '" target="_blank">', '</a>\n                    </span>\n                </div>\n                <div class="buttons-container">\n                    <button class="ok-button button" onclick="', '">\n                        ', '\n                    </button>\n                </div>\n            </div>\n        ']);
-
-var _doz = __webpack_require__(0);
-
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var _class = function (_Component) {
-    _inherits(_class, _Component);
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
-    function _class(o) {
-        _classCallCheck(this, _class);
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-        var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, o));
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-        _this.props = {
-            storageKey: 'doz-cookie-notice-agreement',
-            position: 'bottom',
-            message: '',
-            moreInfoText: '',
-            moreInfoLink: '',
-            privacyLink: '',
-            okButtonText: 'Ok',
-            theme: 'dark'
-        };
-        return _this;
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+var _default = /*#__PURE__*/function (_Component) {
+  _inherits(_default, _Component);
+
+  var _super = _createSuper(_default);
+
+  function _default(o) {
+    var _this;
+
+    _classCallCheck(this, _default);
+
+    _this = _super.call(this, o);
+    _this.props = {
+      storageKey: 'doz-cookie-notice-agreement',
+      position: 'bottom',
+      message: '',
+      moreInfoText: '',
+      moreInfoLink: '',
+      privacyLink: '',
+      okButtonText: 'Ok',
+      theme: 'dark'
+    };
+    return _this;
+  }
+
+  _createClass(_default, [{
+    key: "template",
+    value: function template(h) {
+      //language=HTML
+      return h(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n            <style> \n                :component {\n                    display: ", ";\n                    position: fixed;\n                    ", ";\n                    left: 0;\n                    width: 100%;\n                    z-index: 99999;\n                    font-family: Arial, 'sans-serif';\n                }\n                \n                * {\n                    box-sizing: border-box;\n                }\n                \n                .cookie-notice-container {\n                    ", "\n                    padding: 24px;\n                    font-size: 14px;\n                }\n                \n                .message-container {\n                    margin-bottom: 16px;\n                }\n                \n                .button {\n                    padding: 8px;\n                    border: none;\n                    display: inline-block;\n                    border-radius: 4px;\n                    text-transform: uppercase;\n                }\n                \n                .ok-button {\n                    border: none;\n                    background: cornflowerblue;\n                    color: #fff;\n                    cursor: pointer;\n                }\n                \n                a {\n                    ", "\n                }\n            </style>\n            <div class=\"cookie-notice-container\" data-nosnippet=\"true\">\n                <div class=\"message-container\">\n                    <span class=\"message-text\">", "</span>\n                    <span d-show=\"", "\" class=\"more-info-text\">&nbsp;\n                        <a href=\"", "\" target=\"_blank\">", "</a>\n                    </span>\n                </div>\n                <div class=\"buttons-container\">\n                    <button class=\"ok-button button\" onclick=\"", "\">\n                        ", "\n                    </button>\n                </div>\n            </div>\n        "])), this.agreementExists() ? 'none' : 'block', this.props.position === 'top' ? 'top: 0' : 'bottom: 0', this.props.theme === 'dark' ? 'background: #000; color: #fff;' : 'background: #fff; color: #000;', this.props.theme === 'dark' ? 'color: #fff;' : 'color: #000;', this.props.message, !!this.props.moreInfoLink, this.props.moreInfoLink, this.props.moreInfoText, this.agree, this.props.okButtonText);
     }
+  }, {
+    key: "agreementExists",
+    value: function agreementExists() {
+      return !!localStorage.getItem(this.props.storageKey);
+    }
+  }, {
+    key: "agree",
+    value: function agree() {
+      localStorage.setItem(this.props.storageKey, new Date().getTime() + '');
+      this.render();
+    }
+  }]);
 
-    _createClass(_class, [{
-        key: 'template',
-        value: function template(h) {
+  return _default;
+}(external_commonjs_doz_commonjs2_doz_amd_doz_root_Doz_["Component"]);
 
-            //language=HTML
-            return h(_templateObject, this.agreementExists() ? 'none' : 'block', this.props.position === 'top' ? 'top: 0' : 'bottom: 0', this.props.theme === 'dark' ? 'background: #000; color: #fff;' : 'background: #fff; color: #000;', this.props.theme === 'dark' ? 'color: #fff;' : 'color: #000;', this.props.message, !!this.props.moreInfoLink, this.props.moreInfoLink, this.props.moreInfoText, this.agree, this.props.okButtonText);
-        }
-    }, {
-        key: 'agreementExists',
-        value: function agreementExists() {
-            return !!localStorage.getItem(this.props.storageKey);
-        }
-    }, {
-        key: 'agree',
-        value: function agree() {
-            localStorage.setItem(this.props.storageKey, new Date().getTime() + '');
-            this.render();
-        }
-    }]);
 
-    return _class;
-}(_doz.Component);
-
-exports.default = _class;
 ;
+// CONCATENATED MODULE: ./index.js
+
+ // expose component to global scope
+
+function register() {
+  if (typeof window !== 'undefined') {
+    Object(external_commonjs_doz_commonjs2_doz_amd_doz_root_Doz_["define"])('doz-cookie-notice', _default); // Keep in mind to add a prefix like this: 'dwc-' to the name of the component you are going to define, 
+    // this to prevent Doz from processing possible Web Components that have the same name as the Doz Components.
+
+    Object(external_commonjs_doz_commonjs2_doz_amd_doz_root_Doz_["defineWebComponent"])('dwc-doz-cookie-notice', _default, ['storage-key', 'position', 'message', 'more-info-text', 'more-info-link', 'privacy-link', 'ok-button-text', 'theme']);
+  }
+}
+
+register();
+/* harmony default export */ var index = __webpack_exports__["default"] = (_default);
+
+if (false) {}
 
 /***/ })
 /******/ ]);
